@@ -1,0 +1,11 @@
+<div class="container mt-3">
+  <h1>Créer votre propre restaurant</h1>
+
+  <%= simple_form_for @restaurant do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.select :category, ["chinese", "italian", "japanese", "french", "belgian"] %>
+    <p class="mt-3"><%= f.submit "Créer votre restaurant" %></p>
+  <% end %>
+</div>
