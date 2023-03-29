@@ -7,5 +7,6 @@
   <li><%= restaurant.category %></li>
   <%= link_to "Voir ce restaurant", restaurant_path(restaurant), class: "btn btn-primary mt-3" %>
   <p><%= link_to "Laisser un commentaire",  new_restaurant_review_path(restaurant), class: "btn btn-primary mt-3"%></p>
-<% end %>
+  <% end %>
+  <%= link_to "Ajouter un restaurant", new_restaurant_path, class: "btn btn-primary mt-3" %>
 </div>
